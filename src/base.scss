@@ -1,0 +1,25 @@
+
+$background-color: #2C2C2C;
+$white: #FFF;
+$text-gray: #E4E4E4;
+$blue: #326CF9;
+$footer: #1C1C1C;
+$lite-gray: #E5E5E5;
+
+@mixin main-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 50px;
+}
+
+@mixin title {
+    font-size:48px;
+    line-height: 46px;
+    font-weight: 400;
+    color: $text-color;
+    text-align: center;
+    margin: 50px 0;
+}
