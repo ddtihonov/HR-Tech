@@ -34,22 +34,26 @@ export default function Mentor() {
             <div className={styles.container}>
                 <ul className={styles.list}>
                     <SpeakerCard
-                        title={'Елена  Позолотина'}
+                        title={'Елена'}
+                        surname={'Позолотина'}
                         text={'Директор Корпоративного университета ТМК2U, ПАО «ТМК»'}
                         image={image_1}
                     />
                     <SpeakerCard
-                        title={'Илья Дементьев'}
+                        title={'Илья'}
+                        surname={'Дементьев'}
                         text={'Ректор Корпоративного университета, ПАО «Газпром нефть»'}
                         image={image_2}
                     />
                     <SpeakerCard
-                        title={'Наталия Даниленко'}
+                        title={'Наталия'}
+                        surname={'Даниленко'}
                         text={'HR Head в Яндекс'}
                         image={image_3}
                     />
                     <SpeakerCard
-                        title={'Сергей Сус'}
+                        title={'Сергей'}
+                        surname={'Сус'}
                         text={'Директор по развитию Группы Актион'}
                         image={image_4}
                     />

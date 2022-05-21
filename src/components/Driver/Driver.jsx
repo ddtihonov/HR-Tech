@@ -32,22 +32,26 @@ export default function Driver() {
             <div className={styles.container}>
                 <ul className={styles.list}>
                 <SpeakerCard
-                        title={'Игорь  Баранов'}
+                        title={'Игорь'}
+                        surname={'Баранов'}
                         text={'Проректор Сберуниверситета по обучению и исследованиям '}
                         image={image_1}
                     />
                     <SpeakerCard
-                        title={'Марина Деревлева'}
+                        title={'Марина'}
+                        surname={'Деревлева'}
                         text={'Экс-руководитель Корп. университета, ПАО «СИБУР Холдинг»'}
                         image={image_2}
                     />
                     <SpeakerCard
-                        title={'Татьяна  Ваньчкова'}
+                        title={'Татьяна'}
+                        surname={'Ваньчкова'}
                         text={'Заместитель генерального директора по корпоративному обучению ANCOR'}
                         image={image_3}
                     />
                     <SpeakerCard
-                        title={'Илья Курмышев'}
+                        title={'Илья'}
+                        surname={'Курмышев'}
                         text={'Директор образовательного бизнеса Группы Актион'}
                         image={image_4}
                     />

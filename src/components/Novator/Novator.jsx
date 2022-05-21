@@ -31,17 +31,20 @@ export default function Novator() {
             <div className={styles.container}>
                 <ul className={styles.list}>
                 <SpeakerCard
-                        title={'Елена Тихомирова'}
+                        title={'Елена'}
+                        surname={'Тихомирова'}
                         text={'Руководитель ELearning center'}
                         image={image_1}
                     />
                     <SpeakerCard
-                        title={'Андрей  Скуратов'}
+                        title={'Андрей'}
+                        surname={'Скуратов'}
                         text={'Руководитель Корпоративного университета, «МТС-Банк»'}
                         image={image_2}
                     />
                     <SpeakerCard
-                        title={'Данил Мяло'}
+                        title={'Данил'}
+                        surname={'Мяло'}
                         text={'Главный редактор направления Актион HR и Кадры Группы Актион'}
                         image={image_3}
                     />

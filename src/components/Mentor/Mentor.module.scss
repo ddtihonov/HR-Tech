@@ -4,7 +4,7 @@
 .main {
     max-width: 100%;
     width: 100%;
-    background-color: rgba(250, 250, 250, 0.05);
+    background-color: $grey-transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -63,6 +63,17 @@
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+@media(max-width: 1365px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list{
+        margin-bottom: 50px;
+    }
 }
 
 @media(max-width: 1024px){

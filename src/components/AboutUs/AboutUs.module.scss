@@ -1,0 +1,76 @@
+@import '../../base.scss';
+
+.main {
+    max-width: 100%;
+    width: 100%;
+    background-color: $grey-transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    box-sizing: border-box;
+    padding: 96px 130px 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: $text-gray;
+    font-size: 60px;
+    line-height: 45px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.text {
+    color: $text-gray;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 39px;
+}
+
+.text_big {
+    color: $text-gray;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+}
+
+.link {
+    color: $blue;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 700;
+}
+
+@media(max-width: 1024px){
+
+    .title{
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    .text {
+        margin-top: 20px;
+    }
+
+    .box {
+        padding: 50px 70px 60px;
+    }
+}
+
+@media(max-width: 425px){
+
+    .title{
+        font-size: 32px;
+    }
+
+    .box {
+        padding: 25px 20px 45px;
+    }
+}
+

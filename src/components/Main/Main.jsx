@@ -7,6 +7,7 @@ import Driver from '../Driver/Driver';
 import Motivator from '../Motivator/Motivator';
 import Novator from '../Novator/Novator';
 import Technocrat from '../Technocrat/Technocrat';
+import AboutUs from '../AboutUs/AboutUs';
 
 export default function Main({isOpen}) {
 
@@ -17,6 +18,7 @@ export default function Main({isOpen}) {
         <Motivator/>
         <Technocrat/>
         <Novator/>
+        <AboutUs/>
         <Partners/>
     </section>
     

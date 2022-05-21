@@ -1,6 +1,7 @@
 {
   "name": "hr-tech",
   "version": "0.1.0",
+  "author": "Dmitry Tihonov",
   "private": true,
   "homepage": "https://ddtihonov.github.io/HR-Tech/",
   "dependencies": {

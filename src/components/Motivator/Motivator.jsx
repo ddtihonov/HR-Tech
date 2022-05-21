@@ -32,22 +32,26 @@ export default function Motivator() {
             <div className={styles.container}>
                 <ul className={styles.list}>
                 <SpeakerCard
-                        title={'Роман Баскин'}
+                        title={'Роман'}
+                        surname={'Баскин'}
                         text={'Директор Корпоративного университета, ОАО «РЖД»'}
                         image={image_1}
                     />
                     <SpeakerCard
-                        title={'Алена Гейдт'}
+                        title={'Алена'}
+                        surname={'Гейдт'}
                         text={'Директор по персоналу АНО «Платформа НТИ» и АНО «Университет 20.35»'}
                         image={image_2}
                     />
                     <SpeakerCard
-                        title={'Анна Имас'}
+                        title={'Анна'}
+                        surname={'Имас'}
                         text={'Директор корпоративного бизнеса Группы Актион'}
                         image={image_3}
                     />
                     <SpeakerCard
-                        title={'Марина Львова'}
+                        title={'Марина'}
+                        surname={'Львова'}
                         text={'Директор по организационному развитию Группы компаний HeadHunter'}
                         image={image_4}
                     />

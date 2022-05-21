@@ -65,6 +65,17 @@
     margin: 0;
 }
 
+@media(max-width: 1365px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list{
+        margin-bottom: 50px;
+    }
+}
+
 @media(max-width: 1024px){
 
     .box{
