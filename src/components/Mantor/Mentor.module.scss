@@ -21,13 +21,15 @@
 }
 
 .list{
-    width: 800px;
+    max-width: 731px;
+    width: 100%;
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 @media(max-width: 1024px){

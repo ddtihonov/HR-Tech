@@ -4,7 +4,8 @@
 .main {
     max-width: 100%;
     width: 100%;
-    background-color: $background-color;
+    background-color: rgba(250, 250, 250, 0.05);
+    backdrop-filter: blur(35px);
     display: flex;
     flex-direction: column;
     align-items: center;
