@@ -1,0 +1,38 @@
+@import '../../base.scss';
+
+
+.main {
+    max-width: 100%;
+    width: 100%;
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box{
+    box-sizing: border-box;
+    max-width: 1438px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 124px 132px 105px;
+}
+
+@media(max-width: 1024px){
+
+    .box{
+        padding: 55px;
+    }
+}
+
+@media(max-width: 768px){
+   
+}
+
+@media(max-width: 425px){
+    .box{
+        padding: 20px 20px 40px;
+    }
+}

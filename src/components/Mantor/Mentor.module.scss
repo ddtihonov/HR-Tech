@@ -1,0 +1,48 @@
+@import '../../base.scss';
+
+
+.main {
+    max-width: 100%;
+    width: 100%;
+    background-color: rgba(250, 250, 250, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box{
+    box-sizing: border-box;
+    max-width: 1438px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 124px 132px 105px;
+}
+
+.list{
+    width: 800px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media(max-width: 1024px){
+
+    .box{
+        padding: 55px;
+    }
+}
+
+@media(max-width: 768px){
+   
+}
+
+@media(max-width: 425px){
+    .box{
+        padding: 20px 20px 40px;
+    }
+}

@@ -2,7 +2,7 @@
   "name": "hr-tech",
   "version": "0.1.0",
   "private": true,
-  "homepage": "",
+  "homepage": "https://ddtihonov.github.io/HR-Tech/",
   "dependencies": {
     "@types/node": "^17.0.35",
     "@types/react": "^18.0.9",
