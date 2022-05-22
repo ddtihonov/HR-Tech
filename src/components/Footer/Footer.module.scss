@@ -63,6 +63,12 @@
     margin: 0 0 auto auto;
     width: 48px;
     height: 48px;
+
+    &:hover{
+        cursor: pointer;
+        filter: drop-shadow(0 0 5px $white);
+        transition: .3s;
+    }
 }
 
 @media(max-width: 1024px){

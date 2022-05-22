@@ -11,8 +11,13 @@
 }
 
 .image {
-    max-width: 427px;
+    height: 524px;
     width: 100%;
+    max-width: 427px;
+    background-image: url(../../image/InitialPage/image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .box {
@@ -54,6 +59,7 @@
     line-height: 60px;
     font-weight: 700;
     margin: 47px auto 53px;
+    text-transform: uppercase;
 }
 
 .subtitle{
@@ -72,6 +78,12 @@
 }
 
 @media(max-width: 1280px){
+
+    .image {
+        max-width: 327px;
+        height: 403px;
+    }
+
     .title{
         font-size: 49px;
         line-height: 59px;
@@ -90,9 +102,16 @@
 
 
 @media(max-width: 1024px){
+
     .image {
-        max-width: 327px;
+        max-width: 205px;
+        height: 251px;
     }
+
+    .container{
+        padding: 29px 60px 56px;
+    }
+    
 
     .subtitle{
         font-size: 20px;
@@ -101,8 +120,8 @@
     }
 
     .title{
-        font-size: 39px;
-        line-height: 46px;
+        font-size: 38px;
+        line-height: 45px;
     }
 
     .text{
@@ -116,13 +135,6 @@
         margin-left: 66px;
     }
 
-    .container{
-        padding: 29px 60px 56px;
-    }
-    .image {
-        max-width: 205px;
-    }
-
     .title{
         font-size: 36px;
         line-height: 43px;    
@@ -130,7 +142,7 @@
 }
 }
 
-@media(max-width: 660px){
+@media(max-width: 760px){
     .container{
         align-items: center;
         flex-direction: column;
@@ -139,5 +151,26 @@
 
     .box {
         margin: 0;
+        margin-top: 50px;
     }
+}
+
+@media(max-width: 425px){
+
+    .subtitle{
+        font-size: 16px;
+        line-height: 19px;
+        margin: 0;
+    }
+
+    .title{
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .text{
+        font-size: 14px;
+        line-height: 17px;
+    }
+
 }

@@ -11,6 +11,7 @@ import PresentProjects from '../PresentProjects/PresentProjects';
 import { arrMentor } from '../../utils/data';
 import Switch from '../Switch/Switch';
 import circle from '../../image/Mentor/circle.png'
+import donut from '../../image/Mentor/donut.png'
 
 
 export default function Mentor() {
@@ -33,6 +34,7 @@ export default function Mentor() {
             />
             <h3 className={styles.title_present}>Жюри:</h3>
             <div className={styles.container}>
+                <img className={styles.donut} src={donut} alt='пончик'/>
                 <ul className={styles.list}>
                     <SpeakerCard
                         title={'Елена'}

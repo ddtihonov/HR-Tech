@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './AboutUs.module.scss';
+import helix from '../../image/AboutUs/helix.png'
 
 export default function AboutUs() {
     return (

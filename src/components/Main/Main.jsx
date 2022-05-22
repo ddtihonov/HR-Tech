@@ -9,12 +9,15 @@ import Novator from '../Novator/Novator';
 import Technocrat from '../Technocrat/Technocrat';
 import AboutUs from '../AboutUs/AboutUs';
 import Results from '../Results/Results';
+import Hall from '../Hall/Hall';
 
 export default function Main({isOpen}) {
 
     return (
     <section className={main.main}>
+        <InitialPage/>
         <Results/>
+        <Hall/>
         <Mentor/>
         <Driver/>
         <Motivator/>
