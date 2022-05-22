@@ -15,6 +15,15 @@
     flex-direction: column;
     align-items: center;
     padding: 186px 155px 127px;
+    position: relative;
+}
+
+.rocet {
+    position: absolute;
+    top: 128px;
+    right: 0;
+    width: 619px;
+    height: 381px;
 }
 
 .info {
@@ -61,6 +70,7 @@
     width: 100%;
     height: 638px;
     padding: 0;
+    z-index: 5;
 }
 
 .video {
@@ -116,9 +126,20 @@
     font-size: 14px;
     line-height: 17px;
     }
+
+    .rocet {
+        width: 500px;
+        height: 300px;
+    }
+
 }
 
 @media(max-width: 1024px){
+
+    .rocet {
+        width: 291px;
+        height: 179px;
+    }
 
     .list {
         margin-top: 50px;
@@ -144,6 +165,11 @@
 
 @media(max-width: 769px){
 
+    .rocet {
+        top: 80px;
+        right: 0;
+    }
+
     .list {
         flex-wrap: wrap;
     }
@@ -167,6 +193,15 @@
         width: 200px;
         font-size: 14px;
         line-height: 40px;
+    }
+}
+
+@media(max-width: 577px){
+    .rocet {
+        width: 122px;
+        height: 76px;
+        top: 100px;
+        right: 0px;
     }
 }
 

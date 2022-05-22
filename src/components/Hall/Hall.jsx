@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import ReactPlayer from 'react-player';
 import styles from './Hall.module.scss';
+import rocet from '../../image/Hall/rocet.png'
 
 export default function Hall () {
 
@@ -9,6 +10,7 @@ export default function Hall () {
     return (
         <section className={styles.main} id="Hall">
             <div className={styles.box}>
+            <img className={styles.rocet} src={rocet} alt='зигзаг'/>
                 <div className={styles.info}>
                     <h2 className={styles.title}>Главная сцена</h2>
                     <p className={styles.subtitle}>Актион Акселератор 2.0. Финал</p>
@@ -18,7 +20,7 @@ export default function Hall () {
                     <ReactPlayer 
                         width='100%'
                         height='100%'
-                        className={styles.video} />
+                        className={styles.video} url='https://www.youtube.com/embed/bLwQnK6xplI'/>
                 </div>
                 <ul className={styles.list} >
                 <li className={styles.item}>

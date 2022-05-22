@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 1;
+    position: relative;
 }
 
 .box {
@@ -15,7 +15,24 @@
     padding: 96px 130px 120px;
     display: flex;
     flex-direction: column;
-    position: relative;
+    z-index: 10;
+}
+
+.helix{
+    width: 160px;
+    height: 177px;
+    position: absolute;
+    top: -80px;
+    left: 133px;
+}
+
+.cone {
+    position: absolute;
+    height: 292px;
+    width: 292px;
+    right: 156px;
+    top: -179px;
+    overflow: hidden;
 }
 
 .title {
@@ -51,6 +68,18 @@
 
 @media(max-width: 1024px){
 
+    .helix{
+        width: 100px;
+        height: 117px;
+        top: -50px;
+        left: 133px;
+    }
+
+    .cone {
+        right: 16px;
+        top: -129px;
+    }
+
     .title{
         font-size: 36px;
         line-height: 45px;
@@ -65,7 +94,31 @@
     }
 }
 
+@media(max-width: 769px){
+    .cone {
+        width: 138px;
+        height: 138px;
+        right: 0px;
+        top: -70px;
+    }
+}
+
 @media(max-width: 425px){
+
+    .cone {
+        width: 59px;
+        height: 59px;
+        right: 0px;
+        top: auto;
+        bottom: 0;
+    }
+
+    .helix{
+        width: 36px;
+        height: 40px;
+        top: -20px;
+        left: 133px;
+    }
 
     .title{
         font-size: 32px;

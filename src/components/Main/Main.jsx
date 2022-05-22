@@ -10,6 +10,7 @@ import Technocrat from '../Technocrat/Technocrat';
 import AboutUs from '../AboutUs/AboutUs';
 import Results from '../Results/Results';
 import Hall from '../Hall/Hall';
+import Slider from '../Slider/Slider';
 
 export default function Main({isOpen}) {
 
@@ -24,6 +25,7 @@ export default function Main({isOpen}) {
         <Technocrat/>
         <Novator/>
         <AboutUs/>
+        <Slider/>
         <Partners/>
     </section>
     
