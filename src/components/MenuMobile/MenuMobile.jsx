@@ -1,17 +1,22 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 import styles from './MenuMobile.module.scss'
-import PropTypes from 'prop-types';
+import logo from '../../image/logo.svg';
 
 export default function MenuMobile ({onClose}) {
 
     return (
         <section className={styles.main}>
-            
+            <div className={styles.box}>
+                <img className={styles.logo} src={logo} alt = 'логотип'/>
+                <button className={styles.button} onClick={onClose}/>
+            </div>
+            <nav className={styles.nav}>
+            <a className={styles.link} href='#AboutUs'>О проекте</a>
+            <a className={styles.link} href='#'>Клуб</a>
+            <a className={styles.link} href='#Results'>Расписание </a>
+            <a className={styles.link} href='#'>Трансляция</a>
+            <a className={styles.link} href='#Footer'>Контакты</a>
+            </nav>
         </section>
     )
 }
-
-MenuMobile.propTypes = {
-    onClose: PropTypes.func.isRequired,
-};

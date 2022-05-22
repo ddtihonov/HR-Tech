@@ -3,7 +3,7 @@ import styles from './AboutUs.module.scss';
 
 export default function AboutUs() {
     return (
-    <section className={styles.main}>
+    <section className={styles.main} id="AboutUs">
         <div className={styles.box}>
             <h2 className={styles.title}>Об Акселераторе</h2>
             <p className={styles.text}><span className={styles.text_big}>Актион Акселератор — </span>это первая в России программа профессиональной поддержки корпоративного обучения, созданная Группой Актион. В этом году Акселератор проводится второй раз, и он масштабнее, чем предыдущий. <span className={styles.text_big}>В Акселераторе 2.0 приняло участие 200 компаний</span> крупного и среднего бизнеса, что почти в два раза больше, чем в прошлом году.</p>

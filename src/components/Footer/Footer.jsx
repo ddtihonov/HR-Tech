@@ -6,7 +6,7 @@ import twitter from '../../image/Footer/twitter.svg'
 export default function Footer () {
 
     return (
-        <footer className={styles.footer}>
+        <footer className={styles.footer} id="Footer">
             <div className={styles.container}>
                 <div className={styles.info} >
                     <div className={styles.box_logo}>

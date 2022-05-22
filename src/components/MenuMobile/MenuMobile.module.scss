@@ -22,17 +22,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $white;
-    padding: 50px 10px;
+    background-color: $background-color;
+    padding: 40px 60px;
     z-index: 6;
     }
 
+    .box{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+
 .button {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 20px;
-    height: 20px;
     background-image: url(../../image/MenuMobile/close.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -40,6 +43,8 @@
     border: none;
     background-color: transparent;
     transition: .3s;
+    width: 32px;
+    height: 32px;
 
     &:hover{
         cursor: pointer;
@@ -49,65 +54,52 @@
 }
 
 .logo{
-    width: 164px;
+    width: 183px;
+    height: 16px;
 }
 
 .nav{
-    max-width: 350px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px auto;
 }
 
 .link{
-    font-size: 16px;
-    line-height: 24px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 22px;
     font-weight: 400;
     text-decoration: none;
-    color: $text-color;
+    color: $text-gray;
     transition: 0.3s;
     position: relative;
-    margin-top: 20px;
-
-    &:hover{
-        color: $gray;
-        transition: 1s;
-        cursor: pointer;
+    margin-top: 36px;
+    &:first-child {
+        margin: 0;
     }
-
     &::before{
-        background-color: $gray;
+        background-color: $blue;
         position: absolute;
         content: '';
         bottom: 0;
         width: 100%;
-        height: 1px;
+        height: 2px;
         transition: 0.3s;
         transform: scaleX(0);
     }
     &:hover:before{
         transform: scaleX(1);
     }
+
+    &:focus::before{
+        transform: scaleX(1);
+    }
 }
 
-.phone_box{
-    max-width: 245px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.phone_text{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 17px;
-}
-
-.image{
-    width: 24px;
-    height: 24px;
-    margin-right: 15px;
+@media(max-width: 425px){
+    .main {
+        padding: 25px 20px;
+    }
 }
 }

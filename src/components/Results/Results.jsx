@@ -4,7 +4,7 @@ import styles from './Results.module.scss'
 export default function Results() {
 
     return (
-    <section className={styles.main}>
+    <section className={styles.main} id="Results">
         <div className={styles.box}>
             <h3 className={styles.title}>Актион Акселератор подводит итоги</h3>
             <p className={styles.text}>В 11:00 состоится официальное открытие мероприятия на <a className={styles.link} href='#'>Главной сцене.</a> </p>
