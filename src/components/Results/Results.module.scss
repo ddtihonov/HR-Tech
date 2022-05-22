@@ -1,0 +1,84 @@
+@import '../../base.scss';
+
+.main {
+    width: 100%;
+    background-color: $grey-transparent-2;
+    opacity: 0.9;
+}
+
+.box {
+    box-sizing: border-box;
+    padding: 60px 132px 40px;
+
+}
+
+.title {
+    font-size: 44px;
+    line-height: 45px;
+    font-weight: 700;
+    color: $white;
+    margin: 0;
+    margin-bottom: 70px;
+}
+
+.text {
+    color: $text-gray;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.link {
+    color: $blue;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+@media(max-width: 1024px){
+    .box {
+        padding: 25px 60px;
+    
+    }
+    
+    .title {
+        font-size: 24px;
+        line-height: 45px;
+        margin-bottom: 45px;
+    }
+    
+    .text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    
+    .link {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media(max-width: 425px){
+    .box {
+        padding: 25px 20px;
+    
+    }
+    
+    .title {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 25px;
+    }
+    
+    .text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    
+    .link {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}

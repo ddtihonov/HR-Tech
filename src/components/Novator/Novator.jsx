@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import ReactPlayer from 'react-player';
 import styles from './Novator.module.scss'
 import BlockTitle from '../BlockTitle/BlockTitle';
 import SpeakerCard from '../SpeakerCard/SpeakerCard';
@@ -21,7 +22,7 @@ export default function Novator() {
     const buttonText = isActive ? 'CВЕРНУТЬ ТРАНСЛЯЦИЮ' : 'СМОТРЕТЬ ТРАНСЛЯЦИЮ'
 
     return (
-    <section className={styles.main}>
+    <section className={styles.main} id="novator">
         <div className={styles.box}>
             <BlockTitle
                 title={'Зал 5. Новатор'}
@@ -56,6 +57,12 @@ export default function Novator() {
                         buttonText={buttonText}
                     />
             </div>
+            {isActive && <div className={styles.box_video}>
+                <ReactPlayer 
+                    width='100%'
+                    height='100%'
+                    className={styles.video} url='https://www.youtube.com/embed/bLwQnK6xplI' />
+            </div>}
             <div className={styles.box_present}>
                 <h3 className={styles.title_present}>Проекты представят:</h3>
                 <ul className={styles.list_present}>

@@ -8,11 +8,13 @@ import Motivator from '../Motivator/Motivator';
 import Novator from '../Novator/Novator';
 import Technocrat from '../Technocrat/Technocrat';
 import AboutUs from '../AboutUs/AboutUs';
+import Results from '../Results/Results';
 
 export default function Main({isOpen}) {
 
     return (
     <section className={main.main}>
+        <Results/>
         <Mentor/>
         <Driver/>
         <Motivator/>
