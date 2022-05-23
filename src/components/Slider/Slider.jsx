@@ -8,19 +8,20 @@ import image_5 from '../../image/Slider/Ai_K.png';
 
 export default function Slider () {
 
-    const [isVideo, setIsVideo] = useState();
+    const arrSlider = [{foto : image_5, name: 'Айгюн Курбанова', work: 'Директор департамента персонала, член совета директоров, ООО «Восток-Запад»'}, {foto : image_2, name: 'Екатерина Барабанова', work: 'Директор по развитию персонала, ПАО «Ростелеком»'}, {foto : image_1, name: 'Андрей Скуратов', work: 'Руководитель Корпоративного университета, СПАО «Ингосстрах»'}, {foto : image_3, name: 'Данил Мяло', work: 'Главный редактор направления Актион HR и Кадры, Группа Актион'}, {foto : image_4, name: 'Марина Львова', work: 'Директор по организационному развитию, Группа компаний HeadHunter'}, ]
 
-    const arrSlider = [{foto : image_5, name: 'Айгюн Курбанова', work: 'Директор департамента персонала, член совета директоров, ООО «Восток-Запад»'}, {foto : image_2, name: 'Екатерина Барабанова', work: 'Директор по развитию персонала, ПАО «Ростелеком»'}, {foto : image_1, name: 'Андрей Скуратов', work: 'Руководитель Корпоративного университета, СПАО «Ингосстрах»'}, {foto : image_3, name: 'Данил Мяло', work: 'Главный редактор направления Актион HR и Кадры, Группа Актион'}, {foto : image_3, name: 'Данил Мяло', work: 'Главный редактор направления Актион HR и Кадры, Группа Актион'}, {foto : image_4, name: 'Марина Львова', work: 'Директор по организационному развитию, Группа компаний HeadHunter'}, ]
+    const [isCards, setIsCards] = useState(arrSlider);
 
-    let newArr = arrSlider
+    const handleCardLeft = () => {
+        let copy = [...isCards];
+        copy.push(copy.shift());
+        setIsCards(copy);
+    };
 
-    let elementOne = newArr[0]
-
-    console.log(elementOne)
-
-    const handleCard = () => {
-        elementOne = newArr[2]
-        console.log('бабах')
+    const handleCardRight = () => {
+        let copy = [...isCards];
+        copy.unshift(copy.pop());
+        setIsCards(copy);
     };
 
     return (
@@ -29,34 +30,34 @@ export default function Slider () {
                 <h2 className={styles.title}>Участников Академии обучали и консультировали:</h2>
                 <ul className={styles.list}>
                     <li className={styles.item_small}>
-                        <img className={styles.image_small} src={elementOne.foto} alt='фото'/>
-                        <h5 className={styles.subtitle_small}>{elementOne.name}</h5>
-                        <p className={styles.text_small}>{elementOne.work}</p>
+                        <img className={styles.image_small} src={isCards[0].foto} alt='фото'/>
+                        <h5 className={styles.subtitle_small}>{isCards[0].name}</h5>
+                        <p className={styles.text_small}>{isCards[0].work}</p>
                     </li>
                     <li className={styles.item_average}>
-                        <img className={styles.image_average} src={image_2} alt='фото'/>
-                        <h5 className={styles.subtitle_average}>Екатерина Барабанова</h5>
-                        <p className={styles.text_average}>Директор по развитию персонала, ПАО «Ростелеком»</p>
+                        <img className={styles.image_average} src={isCards[1].foto} alt='фото'/>
+                        <h5 className={styles.subtitle_average}>{isCards[1].name}</h5>
+                        <p className={styles.text_average}>{isCards[1].work}</p>
                     </li>
                     <li className={styles.item}>
-                    <img className={styles.image} src={image_1} alt='фото'/>
-                    <h5 className={styles.subtitle}>Андрей Скуратов</h5>
-                    <p className={styles.text}>Руководитель Корпоративного университета, СПАО «Ингосстрах»</p>
+                    <img className={styles.image} src={isCards[2].foto} alt='фото'/>
+                    <h5 className={styles.subtitle}>{isCards[2].name}</h5>
+                    <p className={styles.text}>{isCards[2].work}</p>
                 </li>
                 <li className={styles.item_average}>
-                    <img className={styles.image_average} src={image_3} alt='фото'/>
-                    <h5 className={styles.subtitle_average}>Данил Мяло</h5>
-                    <p className={styles.text_average}>Главный редактор направления Актион HR и Кадры, Группа Актион</p>
+                    <img className={styles.image_average} src={isCards[3].foto} alt='фото'/>
+                    <h5 className={styles.subtitle_average}>{isCards[3].name}</h5>
+                    <p className={styles.text_average}>{isCards[3].work}</p>
                 </li>
                 <li className={styles.item_small}>
-                    <img className={styles.image_small} src={image_4} alt='фото'/>
-                    <h5 className={styles.subtitle_small}>Марина Львова</h5>
-                    <p className={styles.text_small}>Директор по организационному развитию, Группа компаний HeadHunter</p>
+                    <img className={styles.image_small} src={isCards[4].foto} alt='фото'/>
+                    <h5 className={styles.subtitle_small}>{isCards[4].name}</h5>
+                    <p className={styles.text_small}>{isCards[4].work}</p>
                 </li>
                 </ul>
                 <div className={styles.box_button}>
-                    <button className={styles.button_left} type="button" onClick={handleCard}/>
-                    <button className={styles.button}/>
+                    <button className={styles.button_left} type="button" onClick={handleCardLeft}/>
+                    <button className={styles.button} type="button" onClick={handleCardRight}/>
                 </div>
             </div>
         </section>
