@@ -4,13 +4,14 @@
 .main {
     max-width: 100%;
     width: 100%;
-    background-color: $dark-grey;
+    background-color: $background-color;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .box{
+    position: relative;
     box-sizing: border-box;
     max-width: 1438px;
     width: 100%;
@@ -18,6 +19,14 @@
     flex-direction: column;
     align-items: center;
     padding: 124px 132px 105px;
+}
+
+.donut {
+    position: absolute;
+    right: 0px;
+    bottom: -300px;
+    width: 521px;
+    height: 490px;
 }
 
 .container{

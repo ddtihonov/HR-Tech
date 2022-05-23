@@ -11,6 +11,7 @@ import PresentProjects from '../PresentProjects/PresentProjects';
 import { arrDriver } from '../../utils/data';
 import Switch from '../Switch/Switch';
 import circle from '../../image/Driver/circle.png'
+import donut from '../../image/Driver/donut.png'
 
 export default function Driver() {
 
@@ -25,6 +26,7 @@ export default function Driver() {
     return (
     <section className={styles.main} id="driver">
         <div className={styles.box}>
+            <img className={styles.donut} src={donut} alt='пончик'/>
             <BlockTitle
                 title={'Зал 2. Драйвер'}
                 text={'Проекты корпоративного обучения, направленные на развитие системы наставничества и преемственности'}
