@@ -23,8 +23,8 @@
 
 .donut {
     position: absolute;
-    right: 0px;
-    bottom: -300px;
+    right: -100px;
+    bottom: -200px;
     width: 521px;
     height: 490px;
 }
@@ -82,10 +82,6 @@
     height: 638px;
     width: 100%;
     padding: 0;
-}
-
-.video {
-    border-radius: 23px;
     overflow: hidden;
 }
 

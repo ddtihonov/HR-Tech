@@ -36,7 +36,7 @@ export default function Mentor() {
             <h3 className={styles.title_present}>Жюри:</h3>
             <div className={styles.container}>
                 <img className={styles.donut} src={donut} alt='пончик'/>
-                <ul className={styles.list}>
+                <ul className={styles.list}  id="HallOne">
                     <SpeakerCard
                         title={'Елена'}
                         surname={'Позолотина'}
@@ -73,7 +73,7 @@ export default function Mentor() {
                 <ReactPlayer 
                     width='100%'
                     height='100%'
-                    className={styles.video} url='https://www.youtube.com/embed/bLwQnK6xplI' />
+                    className={styles.video} url='https://youtu.be/bEoEIBZrX-A' />
             </div>}
             <div className={styles.box_present}>
                 <h3 className={styles.title_present}>Проекты представят:</h3>

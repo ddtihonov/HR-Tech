@@ -31,7 +31,7 @@ export default function Technocrat() {
             />
             <h3 className={styles.title_present}>Жюри:</h3>
             <div className={styles.container}>
-                <ul className={styles.list}>
+                <ul className={styles.list} id='HallFour'>
                 <SpeakerCard
                         title={'Олег Замышляев'}
                         text={'Основатель Tellsy и Mozlab'}
@@ -59,7 +59,7 @@ export default function Technocrat() {
                 <ReactPlayer 
                     width='100%'
                     height='100%'
-                    className={styles.video} url='https://www.youtube.com/embed/bLwQnK6xplI' />
+                    className={styles.video} url='https://youtu.be/4ZimARhWFVU' />
             </div>}
             <div className={styles.box_present}>
                 <h3 className={styles.title_present}>Проекты представят:</h3>

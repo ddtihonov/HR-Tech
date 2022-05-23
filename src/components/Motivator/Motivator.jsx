@@ -31,7 +31,7 @@ export default function Motivator() {
             />
             <h3 className={styles.title_present}>Жюри:</h3>
             <div className={styles.container}>
-                <ul className={styles.list}>
+                <ul className={styles.list} id='HallThree'>
                 <SpeakerCard
                         title={'Роман'}
                         surname={'Баскин'}
@@ -68,7 +68,7 @@ export default function Motivator() {
                 <ReactPlayer 
                     width='100%'
                     height='100%'
-                    className={styles.video} url='https://www.youtube.com/embed/bLwQnK6xplI' />
+                    className={styles.video} url='https://youtu.be/eC4bkqChBs8' />
             </div>}
             <div className={styles.box_present}>
                 <h3 className={styles.title_present}>Проекты представят:</h3>

@@ -8,6 +8,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 1;
+    backdrop-filter: blur(11px);
 }
 
 .box{
@@ -73,10 +75,6 @@
     height: 638px;
     width: 100%;
     padding: 0;
-}
-
-.video {
-    border-radius: 23px;
     overflow: hidden;
 }
 

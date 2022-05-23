@@ -6,9 +6,9 @@ import helix from '../../image/Hall/helix.png'
 
 export default function Hall () {
 
-    const [isVideo, setIsVideo] = useState('https://www.youtube.com/embed/bLwQnK6xplI');
+    //const [isVideo, setIsVideo] = useState('https://youtu.be/xgYlWUV1Fvs');
 
-    const handleOne = () => {
+   /* const handleOne = () => {
         setIsVideo('https://youtu.be/TG17LYvc7x4')
     };
 
@@ -26,7 +26,7 @@ export default function Hall () {
 
     const  handleFive = () => {
         setIsVideo('https://youtu.be/ZsncR702gZs')
-    }; 
+    }; */
 
     return (
         <section className={styles.main} id="Hall">
@@ -42,26 +42,39 @@ export default function Hall () {
                         <ReactPlayer 
                             width='100%'
                             height='100%'
-                            className={styles.video} url={isVideo}/>
+                            className={styles.video} url='https://youtu.be/xgYlWUV1Fvs'/>
                     </div>
                     <ul className={styles.list} >
                     <li className={styles.item}>
-                        <button className={styles.button} type="button" onClick={handleOne}>Зал 1. Наставник</button>
+                        <a className={styles.button} href='#HallOne'>Зал 1. Наставник</a>
                     </li>
                     <li className={styles.item}>
-                        <button className={styles.button} type="button" onClick={handleTwo}>Зал 2. Драйвер</button>
+                        <a className={styles.button} href='#HallTwo'>Зал 2. Драйвер</a>
                     </li>
                     <li className={styles.item}>
-                        <button className={styles.button} type="button" onClick={handleThree}>Зал 3. Мотиватор</button>
+                        <a className={styles.button} href='#HallThree'>Зал 3. Мотиватор</a>
                     </li>
                     <li className={styles.item}>
-                        <button className={styles.button} type="button" onClick={handleFour}>Зал 4. Технократ</button>
+                        <a className={styles.button} href='#HallFour'>Зал 4. Технократ</a>
                     </li>
                     <li className={styles.item}>
-                        <button className={styles.button} type="button" onClick={handleFive}>Зал 5. Новатор</button>
+                        <a className={styles.button} href='#HallFive'>Зал 5. Новатор</a>
                     </li>
                 </ul>
             </div>
         </section>
     )
 }
+
+/*<li className={styles.item}>
+<button className={styles.button} type="button" onClick={handleTwo}>Зал 2. Драйвер</button>
+</li>
+<li className={styles.item}>
+<button className={styles.button} type="button" onClick={handleThree}>Зал 3. Мотиватор</button>
+</li>
+<li className={styles.item}>
+<button className={styles.button} type="button" onClick={handleFour}>Зал 4. Технократ</button>
+</li>
+<li className={styles.item}>
+<button className={styles.button} type="button" onClick={handleFive}>Зал 5. Новатор</button>
+</li>*/

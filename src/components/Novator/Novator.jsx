@@ -31,7 +31,7 @@ export default function Novator() {
             />
             <h3 className={styles.title_present}>Жюри:</h3>
             <div className={styles.container}>
-                <ul className={styles.list}>
+                <ul className={styles.list} id='HallFive'>
                 <SpeakerCard
                         title={'Елена'}
                         surname={'Тихомирова'}
@@ -62,7 +62,7 @@ export default function Novator() {
                 <ReactPlayer 
                     width='100%'
                     height='100%'
-                    className={styles.video} url='https://www.youtube.com/embed/bLwQnK6xplI' />
+                    className={styles.video} url='https://youtu.be/OCjYRD1wH_4'/>
             </div>}
             <div className={styles.box_present}>
                 <h3 className={styles.title_present}>Проекты представят:</h3>

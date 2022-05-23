@@ -62,7 +62,7 @@
     width: 100%;
     display: flex;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
@@ -78,12 +78,9 @@
     height: 638px;
     width: 100%;
     padding: 0;
-}
-
-.video {
-    border-radius: 23px;
     overflow: hidden;
 }
+
 
 @media(max-width: 1365px){
     .container{
@@ -139,6 +136,14 @@
 
     .video {
         border-radius: 6px;
+    }
+}
+
+@media(max-width: 360px){
+    .list_present{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
 }
 
