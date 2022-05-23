@@ -1,10 +1,25 @@
-import React from 'react';
+import React, {useCallback, useState} from 'react';
 import header from './header.module.scss';
 import logo from '../../image/logo.svg';
 
 export default function Header({isOpen}) {
+
+  const [visible, setVisible] = useState(false);
+
+    const toggleVisible = () => {
+        const scrolled = document.documentElement.scrollTop;
+        if (scrolled > 300){
+            setVisible(true)
+        } 
+        else if (scrolled <= 300){
+            setVisible(false)
+        }
+    };
+
+    window.addEventListener('scroll', toggleVisible);
+
     return (
-      <header className={header.header}>
+      <header className={`${header.header} ${visible && header.header_scroll}`}>
         <div className={header.box}>
             <img className={header.logo} src={logo} alt = 'логотип'/>
           <nav className={header.nav}>

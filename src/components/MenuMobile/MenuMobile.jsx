@@ -11,11 +11,11 @@ export default function MenuMobile ({onClose}) {
                 <button className={styles.button} onClick={onClose}/>
             </div>
             <nav className={styles.nav}>
-            <a className={styles.link} href='#AboutUs'>О проекте</a>
-            <a className={styles.link} href='#'>Клуб</a>
-            <a className={styles.link} href='#Results'>Расписание </a>
-            <a className={styles.link} href='#Hall'>Трансляция</a>
-            <a className={styles.link} href='#Footer'>Контакты</a>
+            <a className={styles.link} href='#AboutUs' onClick={onClose}>О проекте</a>
+            <a className={styles.link} href='#' onClick={onClose}>Клуб</a>
+            <a className={styles.link} href='#Results' onClick={onClose}>Расписание </a>
+            <a className={styles.link} href='#Hall' onClick={onClose}>Трансляция</a>
+            <a className={styles.link} href='#Footer' onClick={onClose}>Контакты</a>
             </nav>
         </section>
     )
