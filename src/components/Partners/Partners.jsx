@@ -21,40 +21,40 @@ export default function Partners() {
             <h2 className={styles.title}>Информационные партнеры Актион Акселератор 2.0</h2>
             <ul className={styles.list}>
                 <li className={styles.item}>
-                    <img className={styles.image} src={image_1} alt='логотип'/>
+                <a className={styles.link} target='_blank' rel='noopener noreferrer' href='https://vk.com/action_mcfr'><img className={styles.image} src={image_1} alt='логотип'/></a>
                 </li>
                 <li className={styles.item}>
-                    <img className={styles.image} src={image_2} alt='логотип'/>
+                <a className={styles.link} target='_blank' rel='noopener noreferrer' href='https://vk.com/action_mcfr'><img className={styles.image} src={image_2} alt='логотип'/></a>
                 </li>
                 <li className={styles.item}>
-                    <img className={styles.image} src={image_3} alt='логотип'/>
+                <a className={styles.link} target='_blank' rel='noopener noreferrer' href='https://vk.com/action_mcfr'><img className={styles.image} src={image_3} alt='логотип'/></a>
                 </li>
                 <li className={styles.item}>
-                    <img className={styles.image} src={image_4} alt='логотип'/>
+                <a className={styles.link} target='_blank' rel='noopener noreferrer' href='https://vk.com/action_mcfr'><img className={styles.image} src={image_4} alt='логотип'/></a>
                 </li>
                 <li className={styles.item}>
-                    <img className={styles.image} src={image_5} alt='логотип'/>
+                <a className={styles.link} target='_blank' rel='noopener noreferrer' href='https://vk.com/action_mcfr'><img className={styles.image} src={image_5} alt='логотип'/></a>
                 </li>
                 <li className={styles.item}>
-                    <img className={styles.image} src={image_6} alt='логотип'/>
+                <a className={styles.link} target='_blank' rel='noopener noreferrer' href='https://vk.com/action_mcfr'><img className={styles.image} src={image_6} alt='логотип'/></a>
                 </li>
                 <li className={styles.item}>
-                    <img className={styles.image} src={image_7} alt='логотип'/>
+                <a className={styles.link} target='_blank' rel='noopener noreferrer' href='https://vk.com/action_mcfr'><img className={styles.image} src={image_7} alt='логотип'/></a>
                 </li>
                 <li className={styles.item}>
-                    <img className={styles.image} src={image_8} alt='логотип'/>
+                <a className={styles.link} target='_blank' rel='noopener noreferrer' href='https://vk.com/action_mcfr'><img className={styles.image} src={image_8} alt='логотип'/></a>
                 </li>
                 <li className={styles.item}>
-                    <img className={styles.image} src={image_9} alt='логотип'/>
+                <a className={styles.link} target='_blank' rel='noopener noreferrer' href='https://vk.com/action_mcfr'><img className={styles.image} src={image_9} alt='логотип'/></a>
                 </li>
                 <li className={styles.item}>
-                    <img className={styles.image} src={image_10} alt='логотип'/>
+                <a className={styles.link} target='_blank' rel='noopener noreferrer' href='https://vk.com/action_mcfr'><img className={styles.image} src={image_10} alt='логотип'/></a>
                 </li>
                 <li className={styles.item}>
-                    <img className={styles.image} src={image_11} alt='логотип'/>
+                <a className={styles.link} target='_blank' rel='noopener noreferrer' href='https://vk.com/action_mcfr'><img className={styles.image} src={image_11} alt='логотип'/></a>
                 </li>
                 <li className={styles.item}>
-                    <img className={styles.image} src={image_12} alt='логотип'/>
+                <a className={styles.link} target='_blank' rel='noopener noreferrer' href='https://vk.com/action_mcfr'><img className={styles.image} src={image_12} alt='логотип'/></a>
                 </li>
             </ul>
         </div>

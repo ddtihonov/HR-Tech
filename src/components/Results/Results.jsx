@@ -7,7 +7,7 @@ export default function Results() {
     <section className={styles.main} id="Results">
         <div className={styles.box}>
             <h3 className={styles.title}>Актион Акселератор подводит итоги</h3>
-            <p className={styles.text}>В 11:00 состоится официальное открытие мероприятия на <a className={styles.link} href='#'>Главной сцене.</a> </p>
+            <p className={styles.text}>В 11:00 состоится официальное открытие мероприятия на <a className={styles.link} href='#Hall'>Главной сцене.</a> </p>
 
             <p className={styles.text}>
                 С 11:30 переключайтесь на трансляции по трекам: <a className={styles.link} href='#mentor'>Наставник,</a> 
@@ -21,7 +21,3 @@ export default function Results() {
     
 );
 }
-
-
-
-

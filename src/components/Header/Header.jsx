@@ -11,7 +11,7 @@ export default function Header({isOpen}) {
             <a className={header.link} href='#AboutUs'>О проекте</a>
             <a className={header.link} href='#'>Клуб</a>
             <a className={header.link} href='#Results'>Расписание </a>
-            <a className={header.link} href='#'>Трансляция</a>
+            <a className={header.link} href='#Hall'>Трансляция</a>
             <a className={header.link} href='#Footer'>Контакты</a>
           </nav>
           <button className={header.button} onClick={isOpen}/>

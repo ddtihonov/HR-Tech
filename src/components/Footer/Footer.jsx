@@ -16,7 +16,7 @@ export default function Footer () {
                             <p className={styles.text}>accelerator@action-media.ru</p>
                         </div>
                     </div>
-                    <img className={styles.twitter} src={twitter} alt = 'логотип'/>
+                    <a className={styles.twitter} target='_blank' rel='noopener noreferrer' href='https://t.me/actionhrtech'><img className={styles.twitter} src={twitter} alt = 'логотип'/></a>
                 </div>
                 <p className={styles.copyright}>&#169; 2022 All rights reserved</p>
             </div>

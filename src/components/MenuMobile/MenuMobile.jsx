@@ -14,7 +14,7 @@ export default function MenuMobile ({onClose}) {
             <a className={styles.link} href='#AboutUs'>О проекте</a>
             <a className={styles.link} href='#'>Клуб</a>
             <a className={styles.link} href='#Results'>Расписание </a>
-            <a className={styles.link} href='#'>Трансляция</a>
+            <a className={styles.link} href='#Hall'>Трансляция</a>
             <a className={styles.link} href='#Footer'>Контакты</a>
             </nav>
         </section>

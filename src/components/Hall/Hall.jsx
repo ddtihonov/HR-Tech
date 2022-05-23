@@ -5,7 +5,27 @@ import rocet from '../../image/Hall/rocet.png'
 
 export default function Hall () {
 
-    const [isVideo, setIsVideo] = useState();
+    const [isVideo, setIsVideo] = useState('https://www.youtube.com/embed/bLwQnK6xplI');
+
+    const handleOne = () => {
+        setIsVideo('https://youtu.be/TG17LYvc7x4')
+    };
+
+    const handleTwo = () => {
+        setIsVideo('https://youtu.be/r1QILqwzs1M')
+    };
+
+    const handleThree = () => {
+        setIsVideo('https://youtu.be/B9Rmj2IvKgg')
+    };
+
+    const handleFour = () => {
+        setIsVideo('https://youtu.be/5pKfbBJ1Jqw')
+    };
+
+    const  handleFive = () => {
+        setIsVideo('https://youtu.be/ZsncR702gZs')
+    }; 
 
     return (
         <section className={styles.main} id="Hall">
@@ -20,37 +40,26 @@ export default function Hall () {
                     <ReactPlayer 
                         width='100%'
                         height='100%'
-                        className={styles.video} url='https://www.youtube.com/embed/bLwQnK6xplI'/>
+                        className={styles.video} url={isVideo}/>
                 </div>
                 <ul className={styles.list} >
                 <li className={styles.item}>
-                    <button className={styles.button} type="button">Зал 1. Наставник</button>
+                    <button className={styles.button} type="button" onClick={handleOne}>Зал 1. Наставник</button>
                 </li>
                 <li className={styles.item}>
-                    <button className={styles.button} type="button">Зал 2. Драйвер</button>
+                    <button className={styles.button} type="button" onClick={handleTwo}>Зал 2. Драйвер</button>
                 </li>
                 <li className={styles.item}>
-                    <button className={styles.button} type="button">Зал 3. Мотиватор</button>
+                    <button className={styles.button} type="button" onClick={handleThree}>Зал 3. Мотиватор</button>
                 </li>
                 <li className={styles.item}>
-                    <button className={styles.button} type="button">Зал 4. Технократ</button>
+                    <button className={styles.button} type="button" onClick={handleFour}>Зал 4. Технократ</button>
                 </li>
                 <li className={styles.item}>
-                    <button className={styles.button} type="button">Зал 5. Новатор</button>
+                    <button className={styles.button} type="button" onClick={handleFive}>Зал 5. Новатор</button>
                 </li>
             </ul>
             </div>
         </section>
     )
 }
-            /*<nav className={styles.nav}>
-            <button className={styles.button} type="button" onClick={setIsVideo('https://www.youtube.com/embed/bLwQnK6xplI')}>Зал 1. Наставник</button>
-            <button className={styles.button} type="button" onClick={setIsVideo('https://www.youtube.com/embed/bLwQnK6xplI')}>Зал 2. Драйвер</button>
-            <button className={styles.button} type="button" onClick={setIsVideo('https://www.youtube.com/embed/bLwQnK6xplI')}>Зал 3. Мотиватор</button>
-            <button className={styles.button} type="button" onClick={setIsVideo('https://www.youtube.com/embed/bLwQnK6xplI')}>Зал 4. Технократ</button>
-            <button className={styles.button} type="button" onClick={setIsVideo('https://www.youtube.com/embed/bLwQnK6xplI')}>Зал 5. Новатор</button>
-            </nav>*/ 
-            
-            //url='https://www.youtube.com/embed/bLwQnK6xplI'
-
-            
