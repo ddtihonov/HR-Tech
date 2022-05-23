@@ -8,8 +8,13 @@ import icosahedron from '../../image/InitialPage/Icosahedron.png'
 export default function InitialPage () {
     return (
     <section className={styles.main}>
+        <img className={styles.icosahedron} src={icosahedron} alt='фигура'/>
         <div className={styles.container}>
-            <div className={styles.image} ></div>
+            <div className={styles.image} >
+                <img className={styles.cone} src={cone} alt='конус'/>
+                <img className={styles.helix} src={helix} alt='спираль'/>
+                <img className={styles.hat} src={hat} alt='спираль'/>
+            </div>
             <div className={styles.box}>
                 <h3 className={styles.subtitle}>Актион Акселератор 2.0</h3>
                 <h1 className={styles.title}>Финал главного события в&#160;корпоративном обучении</h1>
@@ -19,7 +24,3 @@ export default function InitialPage () {
     </section>
     )
 }
-
-/*<img className={styles.hat} src={hat} alt='шапка'/>
-        <img className={styles.cone} src={cone} alt='конус'/>
-        <img className={styles.helix} src={helix} alt='спираль'/>*/

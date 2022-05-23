@@ -56,8 +56,8 @@ export default function Slider () {
                 </li>
                 </ul>
                 <div className={styles.box_button}>
-                    <button className={styles.button_left} type="button" onClick={handleCardLeft}/>
-                    <button className={styles.button} type="button" onClick={handleCardRight}/>
+                    <button className={styles.button_left} type="button" onClick={handleCardRight}/>
+                    <button className={styles.button} type="button" onClick={handleCardLeft}/>
                 </div>
             </div>
         </section>
