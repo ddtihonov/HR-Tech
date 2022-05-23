@@ -8,6 +8,7 @@ import image_2 from '../../image/Mentor/Ilia_D.png';
 import image_3 from '../../image/Mentor/Natalia_D.png';
 import image_4 from '../../image/Mentor/Ser_C.png';
 import PresentProjects from '../PresentProjects/PresentProjects';
+import PresentProjectsBig from '../PresentProjectsBig/PresentProjectsBig';
 import { arrMentor } from '../../utils/data';
 import Switch from '../Switch/Switch';
 import circle from '../../image/Mentor/circle.png'
@@ -78,13 +79,23 @@ export default function Mentor() {
                 <h3 className={styles.title_present}>Проекты представят:</h3>
                 <ul className={styles.list_present}>
                     {arrMentor.map((item, index) => {
-                        return (
-                            <PresentProjects
-                                key={index}
-                                title={item.title}
-                                text={item.text}
-                            />
-                        )
+                        if(index !== 3) {
+                            return (
+                                <PresentProjects
+                                    key={index}
+                                    title={item.title}
+                                    text={item.text}
+                                />
+                                )
+                        } else {
+                            return (
+                                <PresentProjectsBig
+                                    key={index}
+                                    title={item.title}
+                                    text={item.text}
+                                />
+                            )
+                        }
                     })}
                 </ul>
             </div>

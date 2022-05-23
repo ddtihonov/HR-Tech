@@ -10,6 +10,7 @@ import PresentProjects from '../PresentProjects/PresentProjects';
 import { arrNovator } from '../../utils/data';
 import Switch from '../Switch/Switch';
 import circle from '../../image/Novator/circle.png'
+import PresentProjectsBig from '../PresentProjectsBig/PresentProjectsBig';
 
 export default function Novator() {
 
@@ -67,13 +68,23 @@ export default function Novator() {
                 <h3 className={styles.title_present}>Проекты представят:</h3>
                 <ul className={styles.list_present}>
                     {arrNovator.map((item, index) => {
-                        return (
-                            <PresentProjects
-                                key={index}
-                                title={item.title}
-                                text={item.text}
-                            />
-                        )
+                        if(index !== 0 && index !== 4) {
+                            return (
+                                <PresentProjects
+                                    key={index}
+                                    title={item.title}
+                                    text={item.text}
+                                />
+                                )
+                        } else {
+                            return (
+                                <PresentProjectsBig
+                                    key={index}
+                                    title={item.title}
+                                    text={item.text}
+                                />
+                            )
+                        }
                     })}
                 </ul>
             </div>

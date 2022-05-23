@@ -10,6 +10,7 @@ import PresentProjects from '../PresentProjects/PresentProjects';
 import { arrTechnocrat } from '../../utils/data';
 import Switch from '../Switch/Switch';
 import circle from '../../image/Technocrat/circle.png'
+import PresentProjectsBig from '../PresentProjectsBig/PresentProjectsBig';
 
 export default function Technocrat() {
 
@@ -64,13 +65,23 @@ export default function Technocrat() {
                 <h3 className={styles.title_present}>Проекты представят:</h3>
                 <ul className={styles.list_present}>
                     {arrTechnocrat.map((item, index) => {
+                    if(index !== 0) {
                         return (
                             <PresentProjects
                                 key={index}
                                 title={item.title}
                                 text={item.text}
                             />
+                            )
+                    } else {
+                        return (
+                            <PresentProjectsBig
+                                key={index}
+                                title={item.title}
+                                text={item.text}
+                            />
                         )
+                    }
                     })}
                 </ul>
             </div>
