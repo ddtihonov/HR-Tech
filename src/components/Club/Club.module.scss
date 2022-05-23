@@ -12,6 +12,48 @@
     overflow: hidden;
 }
 
+.container {
+    position: relative;
+    box-sizing: border-box;
+    max-width: 1438px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.triangle {
+    position: absolute;
+    right: 20%;
+    top: 90px;
+    width: 160px;
+    height: 160px;
+}
+
+.icosahedron{
+    position: absolute;
+    right: 0px;
+    bottom: 40%;
+    width: 281px;
+    height: 281px;
+}
+
+.icosahedron_transparent{
+    position: absolute;
+    left: 70px;
+    top: 70px;
+    width: 203px;
+    height: 203px;
+}
+
+.helix{
+    width: 160px;
+    height: 177px;
+    position: absolute;
+    bottom: -70px;
+    left: 133px;
+}
+
 .box {
     box-sizing: border-box;
     max-width: 1438px;
@@ -20,6 +62,7 @@
     flex-direction: column;
     align-items: center;
     padding: 200px 0px;
+    z-index: 1;
 }
 
 .box_info {
@@ -35,6 +78,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    backdrop-filter: blur(32px);
 }
 
 .title {
@@ -76,9 +120,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &:hover{
+        cursor: pointer;
+        filter: drop-shadow(0 0 5px $blue);
+        transition: .3s;
+    }
 }
 
 @media(max-width: 1028px){
+
+    .triangle {
+        right: 25%;
+        top: 0px;
+        width: 160px;
+        height: 160px;
+    }
+
+    .helix{
+        width: 100px;
+        height: 117px;
+        bottom: 0;
+        left: 133px;
+    }
 
     .box {
         padding: 90px 20px;
@@ -107,7 +171,40 @@
     }
 }
 
+@media(max-width: 769px){
+.icosahedron{
+    position: absolute;
+    right: -50px;
+    bottom: 30%;
+    width: 281px;
+    height: 281px;
+}
+
+.icosahedron_transparent{
+    position: absolute;
+    left: -20px;
+    top: 0px;
+    width: 203px;
+    height: 203px;
+}
+}
+
 @media(max-width: 460px){
+
+    .triangle {
+        right: 25%;
+        top: -10px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .helix{
+        width: 36px;
+        height: 40px;
+        bottom: 0px;
+        left: 133px;
+    }
+
     .box {
         padding: 40px 20px;
     }

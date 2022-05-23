@@ -1,12 +1,10 @@
 import React from 'react';
 import styles from './AboutUs.module.scss';
-import helix from '../../image/AboutUs/helix.png';
 import cone from '../../image/AboutUs/cone.png'
 
 export default function AboutUs() {
     return (
     <section className={styles.main} id="AboutUs">
-        <img className={styles.helix} src={helix} alt='зигзаг'/>
         <img className={styles.cone} src={cone} alt='конус'/>
         <div className={styles.box}>
             <h2 className={styles.title}>Об Акселераторе</h2>

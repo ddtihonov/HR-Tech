@@ -8,6 +8,8 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    backdrop-filter: blur(11px);
+    z-index: 2;
 }
 
 .box {
@@ -17,14 +19,6 @@
     padding: 96px 130px 120px;
     display: flex;
     flex-direction: column;
-}
-
-.helix{
-    width: 160px;
-    height: 177px;
-    position: absolute;
-    top: -80px;
-    left: 133px;
 }
 
 .cone {
@@ -69,13 +63,6 @@
 
 @media(max-width: 1024px){
 
-    .helix{
-        width: 100px;
-        height: 117px;
-        top: -50px;
-        left: 133px;
-    }
-
     .cone {
         right: 16px;
         top: -129px;
@@ -112,13 +99,6 @@
         right: 0px;
         top: auto;
         bottom: 0;
-    }
-
-    .helix{
-        width: 36px;
-        height: 40px;
-        top: -20px;
-        left: 133px;
     }
 
     .title{
