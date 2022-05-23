@@ -12,7 +12,7 @@ export default function MenuMobile ({onClose}) {
             </div>
             <nav className={styles.nav}>
             <a className={styles.link} href='#AboutUs' onClick={onClose}>О проекте</a>
-            <a className={styles.link} href='#' onClick={onClose}>Клуб</a>
+            <a className={styles.link} href='#Club' onClick={onClose}>Клуб</a>
             <a className={styles.link} href='#Results' onClick={onClose}>Расписание </a>
             <a className={styles.link} href='#Hall' onClick={onClose}>Трансляция</a>
             <a className={styles.link} href='#Footer' onClick={onClose}>Контакты</a>

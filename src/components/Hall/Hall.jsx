@@ -30,35 +30,35 @@ export default function Hall () {
     return (
         <section className={styles.main} id="Hall">
             <div className={styles.box}>
-            <img className={styles.rocet} src={rocet} alt='зигзаг'/>
-                <div className={styles.info}>
-                    <h2 className={styles.title}>Главная сцена</h2>
-                    <p className={styles.subtitle}>Актион Акселератор 2.0. Финал</p>
-                    <p className={styles.text}>Начало 25 мая, 11:00 (МСК)</p>
-                </div>
-                <div className={styles.box_video}>
-                    <ReactPlayer 
-                        width='100%'
-                        height='100%'
-                        className={styles.video} url={isVideo}/>
-                </div>
-                <ul className={styles.list} >
-                <li className={styles.item}>
-                    <button className={styles.button} type="button" onClick={handleOne}>Зал 1. Наставник</button>
-                </li>
-                <li className={styles.item}>
-                    <button className={styles.button} type="button" onClick={handleTwo}>Зал 2. Драйвер</button>
-                </li>
-                <li className={styles.item}>
-                    <button className={styles.button} type="button" onClick={handleThree}>Зал 3. Мотиватор</button>
-                </li>
-                <li className={styles.item}>
-                    <button className={styles.button} type="button" onClick={handleFour}>Зал 4. Технократ</button>
-                </li>
-                <li className={styles.item}>
-                    <button className={styles.button} type="button" onClick={handleFive}>Зал 5. Новатор</button>
-                </li>
-            </ul>
+                <img className={styles.rocet} src={rocet} alt='зигзаг'/>
+                    <div className={styles.info}>
+                        <h2 className={styles.title}>Главная сцена</h2>
+                        <p className={styles.subtitle}>Актион Акселератор 2.0. Финал</p>
+                        <p className={styles.text}>Начало 25 мая, 11:00 (МСК)</p>
+                    </div>
+                    <div className={styles.box_video}>
+                        <ReactPlayer 
+                            width='100%'
+                            height='100%'
+                            className={styles.video} url={isVideo}/>
+                    </div>
+                    <ul className={styles.list} >
+                    <li className={styles.item}>
+                        <button className={styles.button} type="button" onClick={handleOne}>Зал 1. Наставник</button>
+                    </li>
+                    <li className={styles.item}>
+                        <button className={styles.button} type="button" onClick={handleTwo}>Зал 2. Драйвер</button>
+                    </li>
+                    <li className={styles.item}>
+                        <button className={styles.button} type="button" onClick={handleThree}>Зал 3. Мотиватор</button>
+                    </li>
+                    <li className={styles.item}>
+                        <button className={styles.button} type="button" onClick={handleFour}>Зал 4. Технократ</button>
+                    </li>
+                    <li className={styles.item}>
+                        <button className={styles.button} type="button" onClick={handleFive}>Зал 5. Новатор</button>
+                    </li>
+                </ul>
             </div>
         </section>
     )

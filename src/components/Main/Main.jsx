@@ -11,6 +11,7 @@ import AboutUs from '../AboutUs/AboutUs';
 import Results from '../Results/Results';
 import Hall from '../Hall/Hall';
 import Slider from '../Slider/Slider';
+import Club from '../Club/Club';
 
 export default function Main({isOpen}) {
 
@@ -24,6 +25,7 @@ export default function Main({isOpen}) {
         <Motivator/>
         <Technocrat/>
         <Novator/>
+        <Club/>
         <AboutUs/>
         <Slider/>
         <Partners/>
