@@ -7,6 +7,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    backdrop-filter: blur(29px);
+    z-index: 1;
 }
 
 .box {

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import ReactPlayer from 'react-player';
 import styles from './Hall.module.scss';
 import rocet from '../../image/Hall/rocet.png'
+import helix from '../../image/Hall/helix.png'
 
 export default function Hall () {
 
@@ -29,6 +30,7 @@ export default function Hall () {
 
     return (
         <section className={styles.main} id="Hall">
+            <img className={styles.helix} src={helix} alt='спираль'/>
             <div className={styles.box}>
                 <img className={styles.rocet} src={rocet} alt='зигзаг'/>
                     <div className={styles.info}>
