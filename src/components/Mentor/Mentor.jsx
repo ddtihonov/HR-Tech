@@ -11,8 +11,10 @@ import PresentProjects from '../PresentProjects/PresentProjects';
 import PresentProjectsBig from '../PresentProjectsBig/PresentProjectsBig';
 import { arrMentor } from '../../utils/data';
 import Switch from '../Switch/Switch';
-import circle from '../../image/Mentor/circle.png'
-import donut from '../../image/Mentor/donut.png'
+import circle from '../../image/Mentor/circle.png';
+import donut from '../../image/Mentor/donut.png';
+import helix from '../../image/AboutUs/helix.png';
+import curl from '../../image/Driver/curl.png'
 
 
 export default function Mentor() {
@@ -35,8 +37,10 @@ export default function Mentor() {
             />
             <h3 className={styles.title_present}>Жюри:</h3>
             <div className={styles.container}>
-                <img className={styles.donut} src={donut} alt='пончик'/>
                 <ul className={styles.list}  id="HallOne">
+                    <img className={styles.donut} src={donut} alt='пончик'/>
+                    <img className={styles.helix} src={helix} alt='пончик'/>
+                    <img className={styles.curl} src={curl} alt='фигура'/>
                     <SpeakerCard
                         title={'Елена'}
                         surname={'Позолотина'}

@@ -21,9 +21,40 @@
     padding: 124px 132px 105px;
 }
 
+.box_absolut {
+    position: absolute;
+    top: -50px;
+    right: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.conu{
+    width: 374px;
+    height: 374px;
+    margin-left: 300px;
+}
+
+.circ {
+    width: 98px;
+    height: 98px;
+    margin-left: 200px;
+}
+
+.triangle {
+    width: 118px;
+    height: 118px;
+    margin-left: 100px;
+}
+
+.curl{
+    width: 108px;
+    height: 108px;
+}
+
 .donut {
     position: absolute;
-    right: -100px;
+    right: -50px;
     bottom: -200px;
     width: 521px;
     height: 490px;
@@ -61,6 +92,7 @@
     font-weight: 700;
     color: $white;
     max-width: 60px auto 50px;
+    z-index: 1;
 }
 
 .list_present{
@@ -98,6 +130,16 @@
 
 @media(max-width: 1024px){
 
+    .box_absolut {
+        top: 0px;
+        right: 100px;
+    }
+
+    .donut {
+        right: -50px;
+        bottom: -300px;
+    }
+
     .box{
         padding: 55px;
     }
@@ -120,7 +162,65 @@
     }
 }
 
+@media(max-width: 769px){
+    .box_absolut {
+        top: -50px;
+        right: -50px;
+    }
+    
+    .conu{
+        width: 274px;
+        height: 274px;
+        margin-left: 200px;
+    }
+    
+    .circ {
+        width: 58px;
+        height: 58px;
+        margin-left: 200px;
+    }
+    
+    .triangle {
+        width: 82px;
+        height: 82px;
+        margin-left: 100px;
+    }
+    
+    .curl{
+        width: 82px;
+        height: 82px;
+    }
+}
+
 @media(max-width: 425px){
+    .box_absolut {
+        top: 120px;
+        right: 30px;
+    }
+    
+    .conu{
+        width: 110px;
+        height: 110px;
+        margin-left: 200px;
+    }
+    
+    .circ {
+        width: 21px;
+        height: 21px;
+        margin-left: 200px;
+    }
+    
+    .triangle {
+        width: 29px;
+        height: 29px;
+        margin-left: 100px;
+    }
+    
+    .curl{
+        width: 29px;
+        height: 29px;
+    }
+
     .box{
         padding: 20px 20px 40px;
     }

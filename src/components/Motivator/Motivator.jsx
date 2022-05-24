@@ -10,7 +10,9 @@ import image_4 from '../../image/Motivator/Mari_L.png';
 import PresentProjects from '../PresentProjects/PresentProjects';
 import { arrMotivator } from '../../utils/data';
 import Switch from '../Switch/Switch';
-import circle from '../../image/Motivator/circle.png'
+import circle from '../../image/Motivator/circle.png';
+import curl from '../../image/Driver/curl.png';
+import grup from '../../image/Motivator/grup.png';
 
 export default function Motivator() {
 
@@ -32,6 +34,9 @@ export default function Motivator() {
             <h3 className={styles.title_present}>Жюри:</h3>
             <div className={styles.container}>
                 <ul className={styles.list} id='HallThree'>
+                <img className={styles.curl} src={curl} alt='фигура'/>
+                <img className={styles.donut} src={curl} alt='фигура'/>
+                <img className={styles.grup} src={grup} alt='фигура'/>       
                 <SpeakerCard
                         title={'Роман'}
                         surname={'Баскин'}

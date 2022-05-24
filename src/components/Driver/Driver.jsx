@@ -12,6 +12,10 @@ import { arrDriver } from '../../utils/data';
 import Switch from '../Switch/Switch';
 import circle from '../../image/Driver/circle.png'
 import donut from '../../image/Driver/donut.png'
+import triangle from '../../image/Driver/triangle.png'
+import circ from '../../image/Driver/circ.png'
+import conu from '../../image/Driver/conu.png'
+import curl from '../../image/Driver/curl.png'
 
 export default function Driver() {
 
@@ -27,6 +31,12 @@ export default function Driver() {
     <section className={styles.main} id="driver">
         <div className={styles.box}>
             <img className={styles.donut} src={donut} alt='пончик'/>
+            <div className={styles.box_absolut} >
+                <img className={styles.conu} src={conu} alt='фигура'/>
+                <img className={styles.circ} src={circ} alt='фигура'/>
+                <img className={styles.triangle} src={triangle} alt='фигура'/>
+                <img className={styles.curl} src={curl} alt='фигура'/>
+            </div>
             <BlockTitle
                 title={'Зал 2. Драйвер'}
                 text={'Проекты корпоративного обучения, направленные на развитие системы наставничества и преемственности'}

@@ -29,15 +29,32 @@
 }
 
 .list{
+    position: relative;
     max-width: 731px;
     width: 100%;
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.curl{
+    position: absolute;
+    width: 78px;
+    height: 78px;
+    bottom: 100px;
+    left: 180px;
+}
+
+.treangle{
+    position: absolute;
+    top: -150px;
+    right: -20px;
+    width: 120px;
+    height: 120px;
 }
 
 .box_present{
@@ -127,6 +144,11 @@
 
     .video {
         border-radius: 6px;
+    }
+
+    .curl{
+        bottom: 100px;
+        left: 20px;
     }
 }
 

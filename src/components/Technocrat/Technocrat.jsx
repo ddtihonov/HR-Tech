@@ -9,8 +9,12 @@ import image_3 from '../../image/Technocrat/Alex_E.png';
 import PresentProjects from '../PresentProjects/PresentProjects';
 import { arrTechnocrat } from '../../utils/data';
 import Switch from '../Switch/Switch';
-import circle from '../../image/Technocrat/circle.png'
+import circle from '../../image/Technocrat/circle.png';
 import PresentProjectsBig from '../PresentProjectsBig/PresentProjectsBig';
+import circ from '../../image/Driver/circ.png'
+import curl from '../../image/Driver/curl.png';
+
+
 
 export default function Technocrat() {
 
@@ -32,6 +36,8 @@ export default function Technocrat() {
             <h3 className={styles.title_present}>Жюри:</h3>
             <div className={styles.container}>
                 <ul className={styles.list} id='HallFour'>
+                <img className={styles.grup} src={circ} alt='фигура'/>
+                <img className={styles.curl} src={curl} alt='фигура'/>     
                 <SpeakerCard
                         title={'Олег Замышляев'}
                         text={'Основатель Tellsy и Mozlab'}

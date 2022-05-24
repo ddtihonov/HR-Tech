@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import ReactPlayer from 'react-player';
-import styles from './Novator.module.scss'
+import styles from './Novator.module.scss';
 import BlockTitle from '../BlockTitle/BlockTitle';
 import SpeakerCard from '../SpeakerCard/SpeakerCard';
 import image_1 from '../../image/Novator/Lena_T.png';
@@ -9,8 +9,10 @@ import image_3 from '../../image/Novator/Danil_M.png';
 import PresentProjects from '../PresentProjects/PresentProjects';
 import { arrNovator } from '../../utils/data';
 import Switch from '../Switch/Switch';
-import circle from '../../image/Novator/circle.png'
+import circle from '../../image/Novator/circle.png';
 import PresentProjectsBig from '../PresentProjectsBig/PresentProjectsBig';
+import curl from '../../image/Driver/curl.png';
+import treangle from '../../image/Novator/tre.png';
 
 export default function Novator() {
 
@@ -32,6 +34,8 @@ export default function Novator() {
             <h3 className={styles.title_present}>Жюри:</h3>
             <div className={styles.container}>
                 <ul className={styles.list} id='HallFive'>
+                <img className={styles.curl} src={curl} alt='фигура'/>
+                <img className={styles.treangle} src={treangle} alt='фигура'/>    
                 <SpeakerCard
                         title={'Елена'}
                         surname={'Тихомирова'}
