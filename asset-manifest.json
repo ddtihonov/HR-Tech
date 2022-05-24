@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/HR-Tech/static/css/main.7f710e3d.css",
-    "main.js": "/HR-Tech/static/js/main.20d7e548.js",
+    "main.css": "/HR-Tech/static/css/main.86576cb6.css",
+    "main.js": "/HR-Tech/static/js/main.b7c31528.js",
     "static/js/787.19eea26b.chunk.js": "/HR-Tech/static/js/787.19eea26b.chunk.js",
     "static/media/Igo_Ba.png": "/HR-Tech/static/media/Igo_Ba.6c63cdcd708537ca2adc.png",
     "static/media/Il_De.png": "/HR-Tech/static/media/Il_De.e353ef046394d5d28f47.png",
@@ -18,6 +18,7 @@
     "static/media/Kat_B.png": "/HR-Tech/static/media/Kat_B.6ec72d510df338c34709.png",
     "static/media/Alena_G.png": "/HR-Tech/static/media/Alena_G.c62fc65b21184d910af2.png",
     "static/media/Andr_S.png": "/HR-Tech/static/media/Andr_S.25c20c92ab969bc9ddd8.png",
+    "static/media/conu.png": "/HR-Tech/static/media/conu.cf9d57399bc75a07a17a.png",
     "static/media/Ai_K.png": "/HR-Tech/static/media/Ai_K.6c80cb91aca03aaec950.png",
     "static/media/cone.png": "/HR-Tech/static/media/cone.02fa5c891871e9a6586f.png",
     "static/media/Mari_L.png": "/HR-Tech/static/media/Mari_L.d5e8c8fd3a95e726181c.png",
@@ -54,12 +55,12 @@
     "index.html": "/HR-Tech/index.html",
     "static/media/close.svg": "/HR-Tech/static/media/close.7d66d3262bb3ae58a51b.svg",
     "static/media/burger.svg": "/HR-Tech/static/media/burger.e5caba68d82ab2fa3d57.svg",
-    "main.7f710e3d.css.map": "/HR-Tech/static/css/main.7f710e3d.css.map",
-    "main.20d7e548.js.map": "/HR-Tech/static/js/main.20d7e548.js.map",
+    "main.86576cb6.css.map": "/HR-Tech/static/css/main.86576cb6.css.map",
+    "main.b7c31528.js.map": "/HR-Tech/static/js/main.b7c31528.js.map",
     "787.19eea26b.chunk.js.map": "/HR-Tech/static/js/787.19eea26b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f710e3d.css",
-    "static/js/main.20d7e548.js"
+    "static/css/main.86576cb6.css",
+    "static/js/main.b7c31528.js"
   ]
 }
