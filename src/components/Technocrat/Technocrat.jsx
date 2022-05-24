@@ -27,7 +27,7 @@ export default function Technocrat() {
     const buttonText = isActive ? 'CВЕРНУТЬ ТРАНСЛЯЦИЮ' : 'СМОТРЕТЬ ТРАНСЛЯЦИЮ'
 
     return (
-    <section className={styles.main} id="technocrat">
+    <section className={styles.main} id="#technocrat">
         <div className={styles.box}>
             <BlockTitle
                 title={'Зал 4. Технократ'}

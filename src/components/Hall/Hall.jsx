@@ -46,19 +46,19 @@ export default function Hall () {
                     </div>
                     <ul className={styles.list} >
                     <li className={styles.item}>
-                        <a className={styles.button} href='#HallOne'>Зал 1. Наставник</a>
+                        <a className={styles.button} href='#mentor'>Зал 1. Наставник</a>
                     </li>
                     <li className={styles.item}>
-                        <a className={styles.button} href='#HallTwo'>Зал 2. Драйвер</a>
+                        <a className={styles.button} href='#driver'>Зал 2. Драйвер</a>
                     </li>
                     <li className={styles.item}>
-                        <a className={styles.button} href='#HallThree'>Зал 3. Мотиватор</a>
+                        <a className={styles.button} href='#motivator'>Зал 3. Мотиватор</a>
                     </li>
                     <li className={styles.item}>
-                        <a className={styles.button} href='#HallFour'>Зал 4. Технократ</a>
+                        <a className={styles.button} href='#technocrat'>Зал 4. Технократ</a>
                     </li>
                     <li className={styles.item}>
-                        <a className={styles.button} href='#HallFive'>Зал 5. Новатор</a>
+                        <a className={styles.button} href='#novator'>Зал 5. Новатор</a>
                     </li>
                 </ul>
             </div>
