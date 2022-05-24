@@ -141,7 +141,7 @@
     }
 
     .box{
-        padding: 55px;
+        padding: 40px;
     }
 
     .title_present{
@@ -189,6 +189,17 @@
     .curl{
         width: 82px;
         height: 82px;
+    }
+}
+
+@media(max-width: 577px){
+
+    .box_video{
+        margin-top: 20px;
+        border-radius: 6px;
+        max-width: 452px;
+        height: 254px;
+        width: 100%;
     }
 }
 

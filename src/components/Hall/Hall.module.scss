@@ -206,6 +206,15 @@
 }
 
 @media(max-width: 577px){
+
+    .box_video{
+        margin-top: 20px;
+        border-radius: 6px;
+        max-width: 452px;
+        height: 254px;
+        width: 100%;
+    }
+
     .rocet {
         width: 122px;
         height: 76px;
@@ -231,7 +240,6 @@
 
     .box_video{
         margin-top: 20px;
-        border: 1px solid $blue;
         border-radius: 6px;
         max-width: 315px;
         height: 177px;
