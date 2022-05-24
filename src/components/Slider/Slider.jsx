@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useCallback, useState} from 'react';
 import styles from './Slider.module.scss';
 import image_1 from '../../image/Slider/Andr_S.png';
 import image_2 from '../../image/Slider/Kat_B.png';
@@ -22,17 +22,17 @@ export default function Slider () {
 
     const [isCards, setIsCards] = useState(arrSlider);
 
-    const handleCardLeft = () => {
+    const handleCardLeft = useCallback(() => {
         let copy = [...isCards];
         copy.push(copy.shift());
         setIsCards(copy);
-    };
+    }, [isCards]);
 
-    const handleCardRight = () => {
+    const handleCardRight = useCallback(() => {
         let copy = [...isCards];
         copy.unshift(copy.pop());
         setIsCards(copy);
-    };
+    }, [isCards]);
 
     return (
         <section className={styles.main} id="Hall">
