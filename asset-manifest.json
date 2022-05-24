@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/HR-Tech/static/css/main.d03d4db5.css",
+    "main.css": "/HR-Tech/static/css/main.577806aa.css",
     "main.js": "/HR-Tech/static/js/main.adf84138.js",
     "static/js/787.19eea26b.chunk.js": "/HR-Tech/static/js/787.19eea26b.chunk.js",
     "static/media/Igo_Ba.png": "/HR-Tech/static/media/Igo_Ba.6c63cdcd708537ca2adc.png",
@@ -55,12 +55,12 @@
     "index.html": "/HR-Tech/index.html",
     "static/media/close.svg": "/HR-Tech/static/media/close.7d66d3262bb3ae58a51b.svg",
     "static/media/burger.svg": "/HR-Tech/static/media/burger.e5caba68d82ab2fa3d57.svg",
-    "main.d03d4db5.css.map": "/HR-Tech/static/css/main.d03d4db5.css.map",
+    "main.577806aa.css.map": "/HR-Tech/static/css/main.577806aa.css.map",
     "main.adf84138.js.map": "/HR-Tech/static/js/main.adf84138.js.map",
     "787.19eea26b.chunk.js.map": "/HR-Tech/static/js/787.19eea26b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d03d4db5.css",
+    "static/css/main.577806aa.css",
     "static/js/main.adf84138.js"
   ]
 }
