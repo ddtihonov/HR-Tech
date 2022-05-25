@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import ReactPlayer from 'react-player';
-import styles from './Motivator.module.scss'
+import styles from './Motivator.module.scss';
 import BlockTitle from '../BlockTitle/BlockTitle';
 import SpeakerCard from '../SpeakerCard/SpeakerCard';
 import image_1 from '../../image/Motivator/Poman_B.png';
@@ -13,6 +13,7 @@ import Switch from '../Switch/Switch';
 import circle from '../../image/Motivator/circle.png';
 import curl from '../../image/Driver/curl.png';
 import grup from '../../image/Motivator/grup.png';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function Motivator() {
 
@@ -78,10 +79,11 @@ export default function Motivator() {
             <div className={styles.box_present}>
                 <h3 className={styles.title_present}>Проекты представят:</h3>
                 <ul className={styles.list_present}>
-                    {arrMotivator.map((item, index) => {
+                    {arrMotivator.map(item => {
+                            const keyUid = uuidv4();
                         return (
                             <PresentProjects
-                                key={index}
+                                key={keyUid}
                                 title={item.title}
                                 text={item.text}
                             />
@@ -90,7 +92,6 @@ export default function Motivator() {
                 </ul>
             </div>
         </div>
-    
     </section>
     
 );

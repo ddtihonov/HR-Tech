@@ -11,7 +11,6 @@ import image_8 from '../../image/Slider/R_B.png';
 import image_9 from '../../image/Slider/S_S.png';
 import image_10 from '../../image/Slider/Igo_Ba.png';
 import image_11 from '../../image/Slider/Ta_Va.png';
-import image_12 from '../../image/Slider/Il_De.png';
 import image_13 from '../../image/Slider/An_Im.png';
 import image_14 from '../../image/Slider/Ma_De.png';
 import image_15 from '../../image/Slider/Ilia.jpg';

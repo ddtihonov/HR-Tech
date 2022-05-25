@@ -10,7 +10,9 @@ export default function Footer () {
             <div className={styles.container}>
                 <div className={styles.info} >
                     <div className={styles.box_logo}>
-                        <img className={styles.logo} src={logo} alt = 'логотип'/>
+                        <a className={styles.link} href='#Initial'>
+                            <img className={styles.logo} src={logo} alt = 'логотип'/>
+                        </a>
                         <div className={styles.box}>
                             <h5 className={styles.subtitle}>Контакты</h5>
                             <p className={styles.text}>accelerator@action-media.ru</p>

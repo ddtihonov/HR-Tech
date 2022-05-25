@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import ReactPlayer from 'react-player';
-import styles from './Technocrat.module.scss'
+import styles from './Technocrat.module.scss';
 import BlockTitle from '../BlockTitle/BlockTitle';
 import SpeakerCard from '../SpeakerCard/SpeakerCard';
 import image_1 from '../../image/Technocrat/Oleg_Z.png';
@@ -11,8 +11,9 @@ import { arrTechnocrat } from '../../utils/data';
 import Switch from '../Switch/Switch';
 import circle from '../../image/Technocrat/circle.png';
 import PresentProjectsBig from '../PresentProjectsBig/PresentProjectsBig';
-import circ from '../../image/Driver/circ.png'
+import circ from '../../image/Driver/circ.png';
 import curl from '../../image/Driver/curl.png';
+import { v4 as uuidv4 } from 'uuid';
 
 
 
@@ -27,7 +28,7 @@ export default function Technocrat() {
     const buttonText = isActive ? 'CВЕРНУТЬ ТРАНСЛЯЦИЮ' : 'СМОТРЕТЬ ТРАНСЛЯЦИЮ'
 
     return (
-    <section className={styles.main} id="#technocrat">
+    <section className={styles.main} id="technocrat">
         <div className={styles.box}>
             <BlockTitle
                 title={'Зал 4. Технократ'}
@@ -39,17 +40,20 @@ export default function Technocrat() {
                 <img className={styles.grup} src={circ} alt='фигура'/>
                 <img className={styles.curl} src={curl} alt='фигура'/>     
                 <SpeakerCard
-                        title={'Олег Замышляев'}
+                        title={'Олег'}
+                        surname={'Замышляев'}
                         text={'Основатель Tellsy и Mozlab'}
                         image={image_1}
                     />
                     <SpeakerCard
-                        title={'Екатерина Барабанова'}
+                        title={'Екатерина'}
+                        surname={'Барабанова'}
                         text={'Директор по развитию персонала Ростелеком'}
                         image={image_2}
                     />
                     <SpeakerCard
-                        title={'Александр Евдокименко'}
+                        surname={'Евдокименко'}
+                        title={'Александр'}
                         text={'Директор KPMG Academy Russia'}
                         image={image_3}
                     />
@@ -71,10 +75,11 @@ export default function Technocrat() {
                 <h3 className={styles.title_present}>Проекты представят:</h3>
                 <ul className={styles.list_present}>
                     {arrTechnocrat.map((item, index) => {
+                        const keyUid = uuidv4();
                     if(index !== 0) {
                         return (
                             <PresentProjects
-                                key={index}
+                                key={keyUid}
                                 title={item.title}
                                 text={item.text}
                             />
@@ -82,7 +87,7 @@ export default function Technocrat() {
                     } else {
                         return (
                             <PresentProjectsBig
-                                key={index}
+                                key={keyUid}
                                 title={item.title}
                                 text={item.text}
                             />

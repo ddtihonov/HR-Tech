@@ -1,6 +1,7 @@
-import React, {useCallback, useState} from 'react';
+import React, {useState} from 'react';
 import header from './header.module.scss';
 import logo from '../../image/logo.svg';
+import PropTypes from 'prop-types';
 
 export default function Header({isOpen}) {
 
@@ -34,3 +35,7 @@ export default function Header({isOpen}) {
       </header>
     );
   };
+
+  Header.propTypes = {
+    isOpen : PropTypes.func.isRequired,
+};

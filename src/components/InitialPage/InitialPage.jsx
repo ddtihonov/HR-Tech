@@ -7,7 +7,7 @@ import icosahedron from '../../image/InitialPage/Icosahedron.png'
 
 export default function InitialPage () {
     return (
-    <section className={styles.main}>
+    <section className={styles.main} id="Initial">
         <img className={styles.icosahedron} src={icosahedron} alt='фигура'/>
         <div className={styles.container}>
             <div className={styles.image} >

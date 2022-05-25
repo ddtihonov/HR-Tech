@@ -1,32 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import ReactPlayer from 'react-player';
 import styles from './Hall.module.scss';
-import rocet from '../../image/Hall/rocet.png'
-import helix from '../../image/Hall/helix.png'
+import rocet from '../../image/Hall/rocet.png';
+import helix from '../../image/Hall/helix.png';
 
 export default function Hall () {
-
-    //const [isVideo, setIsVideo] = useState('https://youtu.be/xgYlWUV1Fvs');
-
-   /* const handleOne = () => {
-        setIsVideo('https://youtu.be/TG17LYvc7x4')
-    };
-
-    const handleTwo = () => {
-        setIsVideo('https://youtu.be/r1QILqwzs1M')
-    };
-
-    const handleThree = () => {
-        setIsVideo('https://youtu.be/B9Rmj2IvKgg')
-    };
-
-    const handleFour = () => {
-        setIsVideo('https://youtu.be/5pKfbBJ1Jqw')
-    };
-
-    const  handleFive = () => {
-        setIsVideo('https://youtu.be/ZsncR702gZs')
-    }; */
 
     return (
         <section className={styles.main} id="Hall">
@@ -65,16 +43,3 @@ export default function Hall () {
         </section>
     )
 }
-
-/*<li className={styles.item}>
-<button className={styles.button} type="button" onClick={handleTwo}>Зал 2. Драйвер</button>
-</li>
-<li className={styles.item}>
-<button className={styles.button} type="button" onClick={handleThree}>Зал 3. Мотиватор</button>
-</li>
-<li className={styles.item}>
-<button className={styles.button} type="button" onClick={handleFour}>Зал 4. Технократ</button>
-</li>
-<li className={styles.item}>
-<button className={styles.button} type="button" onClick={handleFive}>Зал 5. Новатор</button>
-</li>*/

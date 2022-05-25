@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import ReactPlayer from 'react-player';
-import styles from './Driver.module.scss'
+import styles from './Driver.module.scss';
 import BlockTitle from '../BlockTitle/BlockTitle';
 import SpeakerCard from '../SpeakerCard/SpeakerCard';
 import image_1 from '../../image/Driver/Igor_B.png';
@@ -10,12 +10,13 @@ import image_4 from '../../image/Driver/Ilia_K.png';
 import PresentProjects from '../PresentProjects/PresentProjects';
 import { arrDriver } from '../../utils/data';
 import Switch from '../Switch/Switch';
-import circle from '../../image/Driver/circle.png'
-import donut from '../../image/Driver/donut.png'
-import triangle from '../../image/Driver/triangle.png'
-import circ from '../../image/Driver/circ.png'
-import conu from '../../image/Driver/conu.png'
-import curl from '../../image/Driver/curl.png'
+import circle from '../../image/Driver/circle.png';
+import donut from '../../image/Driver/donut.png';
+import triangle from '../../image/Driver/triangle.png';
+import circ from '../../image/Driver/circ.png';
+import conu from '../../image/Driver/conu.png';
+import curl from '../../image/Driver/curl.png';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function Driver() {
 
@@ -85,10 +86,11 @@ export default function Driver() {
             <div className={styles.box_present}>
                 <h3 className={styles.title_present}>Проекты представят:</h3>
                 <ul className={styles.list_present}>
-                    {arrDriver.map((item, index) => {
+                    {arrDriver.map(item => {
+                            const keyUid = uuidv4();
                         return (
                             <PresentProjects
-                                key={index}
+                                key={keyUid}
                                 title={item.title}
                                 text={item.text}
                             />
@@ -96,9 +98,7 @@ export default function Driver() {
                     })}
                 </ul>
             </div>
-
         </div>
-    
     </section>
     
 );

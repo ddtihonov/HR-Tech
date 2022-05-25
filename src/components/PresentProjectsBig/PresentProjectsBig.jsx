@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from './PresentProjectsBig.module.scss'
+import styles from './PresentProjectsBig.module.scss';
+import PropTypes from 'prop-types';
 
 
 export default function PresentProjectsBig({title, text}) {
@@ -10,5 +11,9 @@ export default function PresentProjectsBig({title, text}) {
             <p className={styles.text} >{text}</p>
         </li>
     )
-
 }
+
+PresentProjectsBig.propTypes = {
+    text:  PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+};

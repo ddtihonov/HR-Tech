@@ -1,6 +1,7 @@
 import React from "react";
-import styles from './MenuMobile.module.scss'
+import styles from './MenuMobile.module.scss';
 import logo from '../../image/logo.svg';
+import PropTypes from 'prop-types';
 
 export default function MenuMobile ({onClose}) {
 
@@ -18,5 +19,9 @@ export default function MenuMobile ({onClose}) {
             <a className={styles.link} href='#Footer' onClick={onClose}>Контакты</a>
             </nav>
         </section>
-    )
+    );
 }
+
+MenuMobile.propTypes = {
+    onClose:  PropTypes.func.isRequired,
+};

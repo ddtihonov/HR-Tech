@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from './PresentProjects.module.scss'
+import styles from './PresentProjects.module.scss';
+import PropTypes from 'prop-types';
 
 
 export default function PresentProjects({title, text}) {
@@ -12,3 +13,8 @@ export default function PresentProjects({title, text}) {
     )
 
 }
+
+PresentProjects.propTypes = {
+    text:  PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+};

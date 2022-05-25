@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from './BlockTitle.module.scss'
+import styles from './BlockTitle.module.scss';
+import PropTypes from 'prop-types';
 
 export default function BlockTitle({title, text}) {
 
@@ -10,3 +11,8 @@ export default function BlockTitle({title, text}) {
     </div>
 );
 }
+
+BlockTitle.propTypes = {
+    text:  PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+};

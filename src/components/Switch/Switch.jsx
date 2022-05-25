@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from './Switch.module.scss'
+import styles from './Switch.module.scss';
+import PropTypes from 'prop-types';
 
 export default function Switch({title, image, handleClick, buttonText}) {
 
@@ -21,3 +22,10 @@ export default function Switch({title, image, handleClick, buttonText}) {
     </div>
 );
 }
+
+Switch.propTypes = {
+    title:  PropTypes.string.isRequired,
+    buttonText: PropTypes.string.isRequired,
+    handleClick :  PropTypes.func.isRequired,
+    image: PropTypes.string.isRequired,
+};

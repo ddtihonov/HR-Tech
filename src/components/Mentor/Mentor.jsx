@@ -14,7 +14,8 @@ import Switch from '../Switch/Switch';
 import circle from '../../image/Mentor/circle.png';
 import donut from '../../image/Mentor/donut.png';
 import helix from '../../image/AboutUs/helix.png';
-import curl from '../../image/Driver/curl.png'
+import curl from '../../image/Driver/curl.png';
+import { v4 as uuidv4 } from 'uuid';
 
 
 export default function Mentor() {
@@ -83,10 +84,11 @@ export default function Mentor() {
                 <h3 className={styles.title_present}>Проекты представят:</h3>
                 <ul className={styles.list_present}>
                     {arrMentor.map((item, index) => {
+                        const keyUid = uuidv4();
                         if(index !== 3) {
                             return (
                                 <PresentProjects
-                                    key={index}
+                                    key={keyUid}
                                     title={item.title}
                                     text={item.text}
                                 />
@@ -94,7 +96,7 @@ export default function Mentor() {
                         } else {
                             return (
                                 <PresentProjectsBig
-                                    key={index}
+                                    key={keyUid}
                                     title={item.title}
                                     text={item.text}
                                 />

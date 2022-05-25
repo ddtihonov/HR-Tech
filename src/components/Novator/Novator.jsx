@@ -13,6 +13,7 @@ import circle from '../../image/Novator/circle.png';
 import PresentProjectsBig from '../PresentProjectsBig/PresentProjectsBig';
 import curl from '../../image/Driver/curl.png';
 import treangle from '../../image/Novator/tre.png';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function Novator() {
 
@@ -73,17 +74,19 @@ export default function Novator() {
                 <ul className={styles.list_present}>
                     {arrNovator.map((item, index) => {
                         if(index !== 0 && index !== 4) {
+                            const keyUid = uuidv4();
                             return (
                                 <PresentProjects
-                                    key={index}
+                                    key={keyUid}
                                     title={item.title}
                                     text={item.text}
                                 />
                                 )
                         } else {
+                            const keyUid = uuidv4();
                             return (
                                 <PresentProjectsBig
-                                    key={index}
+                                    key={keyUid}
                                     title={item.title}
                                     text={item.text}
                                 />

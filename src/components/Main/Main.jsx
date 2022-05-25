@@ -1,5 +1,5 @@
 import React from 'react';
-import main from './main.module.scss'
+import main from './main.module.scss';
 import InitialPage from '../InitialPage/InitialPage';
 import Partners from '../Partners/Partners';
 import Mentor from '../Mentor/Mentor';
@@ -13,7 +13,8 @@ import Hall from '../Hall/Hall';
 import Slider from '../Slider/Slider';
 import Club from '../Club/Club';
 
-export default function Main({isOpen}) {
+
+export default function Main() {
 
     return (
     <section className={main.main}>

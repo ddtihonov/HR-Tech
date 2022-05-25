@@ -101,6 +101,10 @@
 
 @media(max-width: 1280px){
 
+    .box {
+        max-width: 590px;
+    }
+
     .image {
         max-width: 327px;
         height: 403px;
@@ -154,10 +158,6 @@
 
     .container{
         padding: 29px 60px 56px;
-    }
-
-    .box {
-        max-width: 630px;
     }
 
     .subtitle{
