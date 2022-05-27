@@ -79,6 +79,30 @@
     }
 }
 
+.footer_button{
+    cursor: pointer;
+    padding: 0;
+    border: 0;
+    position:fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    background-image: url(../../image/Footer/button.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: .3s;
+    z-index: 100;
+
+    &:hover{
+        opacity: .6;
+        transition: .3s;
+    }
+}
+
 @media(max-width: 1024px){
     .container {
         padding: 50px 60px 24px;
@@ -93,6 +117,13 @@
 
     .copyright{
         margin-top: 70px;
+    }
+
+    .footer_button {
+        right: 10px;
+        bottom: 10px;
+        width: 30px;
+        height: 30px;
     }
 }
 
