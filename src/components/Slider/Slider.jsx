@@ -1,4 +1,5 @@
-import React, {useCallback, useState} from 'react';
+
+import React, {useCallback, useState, useEffect} from 'react';
 import styles from './Slider.module.scss';
 import { arrSlider } from '../../utils/data';
 import { v4 as uuidv4 } from 'uuid';
@@ -6,6 +7,22 @@ import { v4 as uuidv4 } from 'uuid';
 export default function Slider () {
 
     const [isCards, setIsCards] = useState(arrSlider);
+    const [paused, setPaused] = useState(false);
+    
+    useEffect(() => {
+        const interval = setInterval (() => {
+            if (!paused){
+                let copy = [...isCards];
+                copy.push(copy.shift());
+                setIsCards(copy);
+            }
+        }, 3000) 
+        return () => {
+            if (interval) {
+                clearInterval(interval)
+            }
+        }
+})
 
     const handleCardLeft = useCallback(() => {
             let copy = [...isCards];
@@ -20,7 +37,11 @@ export default function Slider () {
     }, [isCards]);
 
     return (
-        <section className={styles.main} id="Hall">
+        <section 
+            className={styles.main} id="Hall"
+                onMouseEnter={() => setPaused(true)}
+                onMouseLeave={() => setPaused(false)}
+            >
             <div className={styles.box}>
                 <h2 className={styles.title}>Участников Академии обучали и консультировали:</h2>
                 <ul className={styles.list}>
